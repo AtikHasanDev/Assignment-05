@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TechnologyGrid from './components/TechnologyGrid'
 import YourStack from './components/YourStack'
+import Footer from './components/Footer'
 import Loading from './components/Loading'
 
 function App() {
@@ -76,6 +77,8 @@ function App() {
           </div>
         )}
       </section>
+
+      <Footer />
     </div>
   )
 }
