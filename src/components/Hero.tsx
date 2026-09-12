@@ -14,16 +14,16 @@ export default function Hero() {
             Explore frontend, backend, database, and tooling options, compare them side by
             side, and put together the stack that fits your next project.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex gap-3 sm:gap-4">
             <a
               href="#technologies"
-              className="brand-gradient-bg rounded-full px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:opacity-90"
+              className="brand-gradient-bg flex-1 rounded-full px-6 py-3 text-center text-sm font-semibold text-white shadow-md transition hover:opacity-90 sm:flex-none"
             >
               Explore Technologies
             </a>
             <a
               href="#about"
-              className="rounded-full border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-700 transition hover:border-gray-400 hover:bg-gray-50"
+              className="flex-1 rounded-full border border-gray-300 px-6 py-3 text-center text-sm font-semibold text-gray-700 transition hover:border-gray-400 hover:bg-gray-50 sm:flex-none"
             >
               Learn More
             </a>

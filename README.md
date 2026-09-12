@@ -35,7 +35,7 @@ npm install
 npm run dev
 ```
 
-- Live Site Link:
+- Live Site Link: https://graceful-caramel-de7caa.netlify.app
 
 ---
 
