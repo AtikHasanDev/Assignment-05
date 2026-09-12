@@ -4,6 +4,7 @@ import type { Technology } from './types/technology'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TechnologyGrid from './components/TechnologyGrid'
+import YourStack from './components/YourStack'
 import Loading from './components/Loading'
 
 function App() {
@@ -43,6 +44,14 @@ function App() {
     setStack((prev) => [...prev, technology])
   }
 
+  const handleRemove = (id: string) => {
+    setStack((prev) => prev.filter((tech) => tech.id !== id))
+  }
+
+  const handleRemoveAll = () => {
+    setStack([])
+  }
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -61,7 +70,10 @@ function App() {
         ) : error ? (
           <p className="rounded-xl bg-rose-50 p-6 text-center text-sm font-medium text-rose-600">{error}</p>
         ) : (
-          <TechnologyGrid technologies={technologies} stackIds={stackIds} onAdd={handleAdd} />
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_320px]">
+            <TechnologyGrid technologies={technologies} stackIds={stackIds} onAdd={handleAdd} />
+            <YourStack stack={stack} onRemove={handleRemove} onRemoveAll={handleRemoveAll} />
+          </div>
         )}
       </section>
     </div>
