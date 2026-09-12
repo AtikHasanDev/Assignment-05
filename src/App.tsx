@@ -1,12 +1,11 @@
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <div className="p-8 text-center text-gray-400">
-        
-      </div>
+      <Hero />
     </div>
   )
 }
